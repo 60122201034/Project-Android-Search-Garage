@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F77043"
+    tools:context=".Insert_Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/butHome"
+            android:layout_width="75dp"
+            android:layout_height="74dp"
+            android:layout_below="@id/textContact"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="164dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            app:srcCompat="@drawable/map" />
+
+        <Button
+            android:id="@+id/butAddM"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/textContact"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/moto" />
+
+        <Button
+            android:id="@+id/butAddC"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/textContact"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/butAddM"
+            android:background="@drawable/car" />
+
+        <EditText
+            android:id="@+id/textLati"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Latitude"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/textContact"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textLongti"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Contact"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/textLongti"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textLati"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Longtitude"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/textName"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView6"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1084524178403",
+    "firebase_url": "https://finging-garage.firebaseio.com",
+    "project_id": "finging-garage",
+    "storage_bucket": "finging-garage.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1084524178403:android:416c7614ebd36411298ed6",
+        "android_client_info": {
+          "package_name": "com.example.findinggarage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1084524178403-ahhp5ov23mjrvnp96jie1bk2b77m402d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.findinggarage",
+            "certificate_hash": "f3bbec1a61c22a2a5626124986e424ff59b33132"
+          }
+        },
+        {
+          "client_id": "1084524178403-d3u7hd35g6nrvbin6l58t2mipek4l06b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVlRuIYewchc4TBqZJxrlQsjkT7Iyzb_U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1084524178403-d3u7hd35g6nrvbin6l58t2mipek4l06b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

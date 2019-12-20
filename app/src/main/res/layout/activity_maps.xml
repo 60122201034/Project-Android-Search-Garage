@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonNormal"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:text="ภูมิประเทศ"
+            android:textColor="#FF5722"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonSatellite"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:text="ดาวเทียม"
+            android:textColor="#FF5722"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonHybrid"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="58dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:text="ผสม"
+            android:textColor="#FF5722"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+    </LinearLayout>
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="560dp"
+        android:layout_marginTop="55dp"
+        tools:context="th.ac.ubu.basicgooglemap.MapsActivity"></fragment>
+
+    <Button
+        android:id="@+id/buttonNavigate"
+        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+        android:layout_width="match_parent"
+        android:layout_height="114dp"
+        android:layout_below="@id/map"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="-3dp"
+        android:background="#FFFFFF"
+        android:text="Find Current Location"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FF5722"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/butAD"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@id/map"
+        android:background="@drawable/admin" />
+
+    <Button
+        android:id="@+id/buttonCar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/car"
+        android:layout_alignTop="@id/map"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="5dp"/>
+
+    <Button
+        android:id="@+id/buttonMoto"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/moto"
+        android:layout_alignTop="@id/map"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="5dp"/>
+
+</RelativeLayout>
